@@ -50,7 +50,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/appmetrica/appmetrica-sdk-ios", "5.11.0"..<"6.0.0"),
+        .package(url: "https://github.com/appmetrica/appmetrica-sdk-ios", exact: "5.11.2"),
         .package(url: "https://github.com/divkit/divkit-ios-facade", .upToNextMinor(from: "5.0.2")),
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .upToNextMinor(from: "12.2.0")),
         .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager", .upToNextMinor(from: "7.4.2")),
