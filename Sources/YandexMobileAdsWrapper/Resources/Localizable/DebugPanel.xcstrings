@@ -630,23 +630,6 @@
         }
       }
     },
-    "Type" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Type"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Тип"
-          }
-        }
-      }
-    },
     "User Privacy" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -694,6 +677,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Водопад"
+          }
+        }
+      }
+    },
+    "ya_Type" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тип"
           }
         }
       }
