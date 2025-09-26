@@ -39,10 +39,13 @@ class MobileMediationInterstitialViewController: UIViewController {
     ]
 #else
     private let adUnitIDs = [
-        (adapter: "AppLovin", adUnitID: appLovinAdUnitID),
-        (adapter: "AdMob", adUnitID: adMobAdUnitID),
+        (adapter: "Chartboost", adUnitID: chartboostAdUnitID),
+        (adapter: "InMobi", adUnitID: inMobiAdUnitID),
+        (adapter: "IronSource", adUnitID: ironSourceAdUnitID),
         (adapter: "Mintegral", adUnitID: mintegralAdUnitID),
         (adapter: "MyTarget", adUnitID: myTargetAdUnitID),
+        (adapter: "StartApp", adUnitID: startAppAdUnitID),
+        (adapter: "UnityAds", adUnitID: unityAdsAdUnitID),
         (adapter: "Vungle", adUnitID: vungleAdUnitID),
         (adapter: "Yandex", adUnitID: yandexAdUnitID)
     ]
