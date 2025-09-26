@@ -46,10 +46,6 @@ let package = Package(
             targets: ["InMobiYandexMobileAdsAdaptersWrapper"]
         ),
         .library(
-            name: "StartAppYandexMobileAdsAdapters",
-            targets: ["StartAppYandexMobileAdsAdaptersWrapper"]
-        ),
-        .library(
             name: "YandexMobileAdsMediation",
             targets: [
                 "YandexMobileAdsMediation",
@@ -60,7 +56,6 @@ let package = Package(
                 "IronSourceYandexMobileAdsAdaptersWrapper",
                 "ChartboostYandexMobileAdsAdaptersWrapper",
                 "InMobiYandexMobileAdsAdaptersWrapper",
-                "StartAppYandexMobileAdsAdaptersWrapper",
             ]
         )
     ],
@@ -149,14 +144,6 @@ let package = Package(
                 .target(name: "YandexMobileAdsWrapper")
             ]
         ),
-        .target(
-            name: "StartAppYandexMobileAdsAdaptersWrapper",
-            dependencies: [
-                .target(name: "StartAppSDK"),
-                .target(name: "StartAppYandexMobileAdsAdapters"),
-                .target(name: "YandexMobileAdsWrapper")
-            ]
-        ),
         .binaryTarget(
             name: "YandexMobileAds",
             url: "https://ads-mobile-sdk.s3.yandex.net/Yandex/YandexMobileAds/7.16.0/spm/4089026a-70f5-4b75-8685-386a84dad95e.zip",
@@ -221,16 +208,6 @@ let package = Package(
             name: "InMobiSDK",
             url: "https://dl.inmobi.com/inmobi-sdk/IM/InMobi-iOS-SDK-10.8.8.zip",
             checksum: "638166a04eb3940b2caa968fc4f5cbbc42336416db430cab45db95070d78817b"
-        ),
-        .binaryTarget(
-            name: "StartAppYandexMobileAdsAdapters",
-            url: "https://ads-mobile-sdk.s3.yandex.net/Yandex/StartAppYandexMobileAdsAdapters/4.10.4.18/cocoapods/3663cfe8-6eeb-404f-91db-aa53b0acde41.zip",
-            checksum: "bce8823863bea07e64ad256f5cca42d87b0ee7a666f1db99bdf057ddc43f3dbd"
-        ),
-        .binaryTarget(
-            name: "StartAppSDK",
-            url: "https://github.com/nauhcx/StartAppSDK/releases/download/4.10.4/StartApp.xcframework.zip",
-            checksum: "d7264d35a65e25152a085558aba94642e7396cacd1b255a00ac96a7f8882b54c"
         ),
         .binaryTarget(
             name: "YandexMobileAdsMediation",
