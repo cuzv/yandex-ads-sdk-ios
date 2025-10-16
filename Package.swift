@@ -186,8 +186,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "IronSource",
-            url: "https://github.com/ironsource-mobile/iOS-sdk/releases/download/IronSource_9.0.0/IronSource9.0.0.zip",
-            checksum: "f3453207612eac8c9fc9e6c335e6818580d1ad203675e066725414b381d2684a"
+            url: "https://github.com/ironsource-mobile/iOS-sdk/releases/download/IronSource_8.10.0/IronSource8.10.0.zip",
+            checksum: "75f6acb4803e3c4574be3fd5a2fdeff9e0c33526bb37e772153d2c5df5141c49"
         ),
         .binaryTarget(
             name: "ChartboostYandexMobileAdsAdapters",
