@@ -20,6 +20,7 @@ private let inMobiAdUnitID = "demo-interstitial-inmobi"
 private let startAppAdUnitID = "demo-interstitial-startapp"
 private let vungleAdUnitID = "demo-interstitial-vungle"
 private let yandexAdUnitID = "demo-interstitial-yandex"
+private let dtAdUnitID = "demo-interstitial-digitalturbine"
 
 class MobileMediationInterstitialViewController: UIViewController {
 #if COCOAPODS
@@ -46,7 +47,8 @@ class MobileMediationInterstitialViewController: UIViewController {
         (adapter: "MyTarget", adUnitID: myTargetAdUnitID),
         (adapter: "UnityAds", adUnitID: unityAdsAdUnitID),
         (adapter: "Vungle", adUnitID: vungleAdUnitID),
-        (adapter: "Yandex", adUnitID: yandexAdUnitID)
+        (adapter: "Yandex", adUnitID: yandexAdUnitID),
+        (adapter: "DigitalTurbine", adUnitID: dtAdUnitID),
     ]
 #endif
     

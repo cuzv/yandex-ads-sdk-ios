@@ -46,6 +46,10 @@ let package = Package(
             targets: ["InMobiYandexMobileAdsAdaptersWrapper"]
         ),
         .library(
+            name: "DigitalTurbineYandexMobileAdsAdapters",
+            targets: ["DigitalTurbineYandexMobileAdsAdaptersWrapper"]
+        ),
+        .library(
             name: "YandexMobileAdsMediation",
             targets: [
                 "YandexMobileAdsMediation",
@@ -56,6 +60,7 @@ let package = Package(
                 "IronSourceYandexMobileAdsAdaptersWrapper",
                 "ChartboostYandexMobileAdsAdaptersWrapper",
                 "InMobiYandexMobileAdsAdaptersWrapper",
+                "DigitalTurbineYandexMobileAdsAdaptersWrapper",
             ]
         )
     ],
@@ -144,6 +149,14 @@ let package = Package(
                 .target(name: "YandexMobileAdsWrapper")
             ]
         ),
+        .target(
+            name: "DigitalTurbineYandexMobileAdsAdaptersWrapper",
+            dependencies: [
+                .target(name: "DigitalTurbineYandexMobileAdsAdapters"),
+                .target(name: "IASDKCore"),
+                .target(name: "YandexMobileAdsWrapper")
+            ]
+        ),
         .binaryTarget(
             name: "YandexMobileAds",
             url: "https://ads-mobile-sdk.s3.yandex.net/Yandex/YandexMobileAds/7.16.0/spm/4089026a-70f5-4b75-8685-386a84dad95e.zip",
@@ -208,6 +221,16 @@ let package = Package(
             name: "InMobiSDK",
             url: "https://dl.inmobi.com/inmobi-sdk/IM/InMobi-iOS-SDK-10.8.8.zip",
             checksum: "638166a04eb3940b2caa968fc4f5cbbc42336416db430cab45db95070d78817b"
+        ),
+        .binaryTarget(
+            name: "DigitalTurbineYandexMobileAdsAdapters",
+            url: "https://ads-mobile-sdk.s3.yandex.net/Yandex/DigitalTurbineYandexMobileAdsAdapters/8.3.8.0/cocoapods/0d105d3f-6f60-47ad-960c-30b379f6887f.zip",
+            checksum: "f776d553c380bc6854cb68c73c7b46991642bc3b86832fdeae7e5d91d97e3365"
+        ),
+        .binaryTarget(
+            name: "IASDKCore",
+            url: "https://github.com/nauhcx/InneractiveAdSDK-iOS/releases/download/8.4.1/IASDKCore.xcframework.zip",
+            checksum: "5f10492e17b4bfc46ecfed23082c8614af6dfff159c4c2430cc052173d93d0d0"
         ),
         .binaryTarget(
             name: "YandexMobileAdsMediation",
