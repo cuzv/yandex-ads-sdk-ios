@@ -53,6 +53,7 @@ let package = Package(
             name: "YandexMobileAdsMediation",
             targets: [
                 "YandexMobileAdsMediation",
+                "YandexMobileAdsMediationExtras",
                 "VungleYandexMobileAdsAdaptersWrapper",
                 "MyTargetYandexMobileAdsAdaptersWrapper",
                 "MintegralYandexMobileAdsAdaptersWrapper",
@@ -236,6 +237,11 @@ let package = Package(
             name: "YandexMobileAdsMediation",
             url: "https://ads-mobile-sdk.s3.yandex.net/Yandex/YandexMobileAdsMediation/7.16.0/spm/96d3089e-e0d3-4429-b707-84d5bc0a3f00.zip",
             checksum: "24c2ef6ff61eba6cdfe8bf7cb489fde269727a1268b923546df6bc7a30ef522f"
+        ),
+        .binaryTarget(
+            name: "YandexMobileAdsMediationExtras",
+            url: "https://ads-mobile-sdk.s3.yandex.net/Yandex/YandexMobileAdsMediationExtras/7.16.0/cocoapods/be67cef4-186c-44ae-96e0-6c62b36a8508.zip",
+            checksum: "af2cda7589f19ef3fc52667afe3aac9033714657b9df858cd0f8b99faa66a567"
         )
     ]
 )
